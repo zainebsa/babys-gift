@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>for melek</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="darkModeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌗</button>
+
+  <div class="container">
+    <!-- Back to Homepage Button -->
+    <a href="homepage.html" class="btn back-home" aria-label="Back to Homepage">← Back to Homepage</a>
+
+    <h1>👨‍💻 Welcome, My Love</h1>
+    <p class="subtitle">Your personal productivity space</p>
+
+    <!-- Daily Love Message -->
+    <section class="dailyLove">
+      <h2>💘 Your Daily Love Note</h2>
+      <p id="dailyLoveText"></p>
+    </section>
+
+    <!-- Task Checklist -->
+    <section class="tasks">
+      <h2>✅ Task Checklist</h2>
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Notes -->
+    <section class="notes">
+      <h2>📝 Notes</h2>
+      <textarea id="noteInput" placeholder="Write your thoughts..."></textarea>
+      <button onclick="addNote()">Add Note</button>
+      <ul id="notesList"></ul>
+    </section>
+
+    <!-- File Upload -->
+    <section class="files">
+      <h2>📁 Documents & Files</h2>
+      <input type="file" id="fileUpload" />
+      <ul id="fileList"></ul>
+    </section>
+
+    <!-- Alarm -->
+    <section class="alarm">
+      <h2>⏰ Alarm</h2>
+      <input type="time" id="alarmTime" />
+      <button onclick="setAlarm()">Set Alarm</button>
+      <p id="alarmStatus"></p>
+    </section>
+
+    <!-- Motivation Quote -->
+    <section class="quote">
+      <h2>💡 Daily Inspiration</h2>
+      <p id="quoteText">Click below for a surprise...</p>
+      <button onclick="generateQuote()">Get Quote</button>
+    </section>
+
+    <!-- Music Player Link Section -->
+<section class="music-link">
+  <h2>🎧 Music Player</h2>
+  <a href="music.html" class="btn" aria-label="Open Music Player">Open Music Player</a>
+</section>
+
+    <!-- Love Surprise -->
+    <section class="secret">
+      <button onclick="showLoveNote()">💌 For Melek</button>
+      <p id="loveNote" class="hidden"></p>
+      <div id="kiss" class="kiss hidden">💋</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
